@@ -95,6 +95,9 @@ jobs:
   build:
     name: Build and test
     runs-on: ${{ matrix.os }}
+    # NOTE: self-hosted riscv64 runners are experimental and may be flaky.
+    # Do not block CI on failures from this platform for now at inital stages of support.
+    continue-on-error: ${{ contains(matrix.os, 'self-hosted') }}
     strategy:
       matrix:
         os:
