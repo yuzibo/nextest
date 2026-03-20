@@ -1,6 +1,6 @@
 on:
   push:
-    branches: [main, auto, canary]
+    branches: [main, test-riscv64-runner-vimer]
   pull_request:
     branches:
       - main
