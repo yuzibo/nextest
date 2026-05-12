@@ -2,7 +2,7 @@
 # secrets.
 on:
   push:
-    branches: [main, auto, canary]
+    branches: [main, auto, test-riscv64-runner-vimer]
   # No pull_request (this should be safe, but the number of runners is limited
   # so we limit it to pushes only.)
 
